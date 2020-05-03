@@ -1,7 +1,7 @@
 ﻿using BepInEx.Logging;
 using Serilog;
 
-namespace WebSocketListenServers
+namespace PassivePicasso.GotSeq
 {
     public class GotSeqLogListener : ILogListener
     {

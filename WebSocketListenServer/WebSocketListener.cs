@@ -1,11 +1,9 @@
 ﻿using BepInEx.Logging;
-using PassivePicasso.WebSocket;
-using System.Linq;
 using WebSocketSharp;
 using WebSocketSharp.Server;
 using Logger = BepInEx.Logging.Logger;
 
-namespace WebSocketListenServers
+namespace PassivePicasso.WebSlog
 {
     public class WebSocketListener : WebSocketBehavior, ILogListener
     {

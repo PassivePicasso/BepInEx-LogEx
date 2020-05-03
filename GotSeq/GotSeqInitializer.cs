@@ -2,9 +2,9 @@
 using Mono.Cecil;
 using System.Collections.Generic;
 using System.Linq;
-using WebSocketListenServers;
+using PassivePicasso;
 
-namespace PassivePicsso
+namespace PassivePicasso.GotSeq
 {
     public class GotSeqInitializer
     {

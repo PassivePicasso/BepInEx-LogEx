@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceAssemblies", "Refe
 		Assemblies\Mono.Cecil.dll = Assemblies\Mono.Cecil.dll
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassivePicasso.Common", "PassivePicasso.Common\PassivePicasso.Common.csproj", "{AB3178E9-F318-4DFB-8B2B-9B849146C516}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,12 @@ Global
 		{35044C63-BF5F-4781-9941-6B2EF09AB547}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
 		{35044C63-BF5F-4781-9941-6B2EF09AB547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35044C63-BF5F-4781-9941-6B2EF09AB547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB3178E9-F318-4DFB-8B2B-9B849146C516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB3178E9-F318-4DFB-8B2B-9B849146C516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB3178E9-F318-4DFB-8B2B-9B849146C516}.Deploy|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB3178E9-F318-4DFB-8B2B-9B849146C516}.Deploy|Any CPU.Build.0 = Debug|Any CPU
+		{AB3178E9-F318-4DFB-8B2B-9B849146C516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB3178E9-F318-4DFB-8B2B-9B849146C516}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

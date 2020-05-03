@@ -1,4 +1,4 @@
-﻿namespace PassivePicsso
+﻿namespace PassivePicasso.Common
 {
     public delegate void MethodCall();
     public delegate void Hook(MethodCall orig);

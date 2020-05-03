@@ -1,8 +1,7 @@
 ﻿using BepInEx.Logging;
-using PassivePicasso.WebSocket;
 using System.Collections.Generic;
 
-namespace WebSocketListenServer
+namespace PassivePicasso.WebSlog
 {
     public class LogAggregator : ILogListener
     {

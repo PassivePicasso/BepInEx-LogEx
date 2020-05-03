@@ -8,7 +8,7 @@
     <ProjectGuid>{7A9AF8CF-24C3-40E1-B131-C1F412607666}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebSocketListenServer</RootNamespace>
+    <RootNamespace>PassivePicasso.WebSlog</RootNamespace>
     <AssemblyName>WebSocketListenServer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -1,12 +1,10 @@
 ﻿using BepInEx.Logging;
-using WebSocketListenServers;
 using Mono.Cecil;
 using System.Collections.Generic;
 using System.Linq;
 using WebSocketSharp.Server;
-using WebSocketListenServer;
 
-namespace PassivePicasso.WebSocket
+namespace PassivePicasso.WebSlog
 {
     public class WebSocketLogServer
     {

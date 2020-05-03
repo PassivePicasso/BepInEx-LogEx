@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using WebSocketSharp;
 
-namespace WebSocketLogClient
+namespace PassivePicasso.WebSlogClient
 {
     public class LogClient
     {

@@ -8,7 +8,7 @@
     <ProjectGuid>{7E7F34FB-5D26-447A-A5BF-52034D075A64}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GotSeq</RootNamespace>
+    <RootNamespace>PassivePicasso.GotSeq</RootNamespace>
     <AssemblyName>GotSeq</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -80,7 +80,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Delegate.cs" />
     <Compile Include="GotSeqInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GotSeqLogListener.cs" />
@@ -96,6 +95,12 @@
     <Content Include="screenshot01.png" />
     <Content Include="screenshot02.png" />
     <Content Include="screenshot03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PassivePicasso.Common\PassivePicasso.Common.csproj">
+      <Project>{ab3178e9-f318-4dfb-8b2b-9b849146c516}</Project>
+      <Name>PassivePicasso.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="PostBuildEvent">
