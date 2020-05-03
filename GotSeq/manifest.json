@@ -1,6 +1,6 @@
 {
   "name": "GotSeq",
-  "version_number": "1.0.1",
+  "version_number": "1.0.2",
   "website_url": "https://github.com/PassivePicasso/BepInEx-LogEx",
   "description": "A logging extensing for bepinex which logs to a local Seq.Net instance on port 5341",
   "dependencies": [ "bbepis-BepInExPack-3.0.0" ]
