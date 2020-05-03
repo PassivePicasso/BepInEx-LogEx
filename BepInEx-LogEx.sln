@@ -9,22 +9,36 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketListenServer", "We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketLogClient", "WebSocketLogClient\WebSocketLogClient.csproj", "{35044C63-BF5F-4781-9941-6B2EF09AB547}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceAssemblies", "ReferenceAssemblies", "{D5203CDB-61A3-4F9D-9F44-79C5767097A4}"
+	ProjectSection(SolutionItems) = preProject
+		Assemblies\BepInEx.dll = Assemblies\BepInEx.dll
+		deploy.proj = deploy.proj
+		Assemblies\Mono.Cecil.dll = Assemblies\Mono.Cecil.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Deploy|Any CPU = Deploy|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7E7F34FB-5D26-447A-A5BF-52034D075A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7E7F34FB-5D26-447A-A5BF-52034D075A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7F34FB-5D26-447A-A5BF-52034D075A64}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{7E7F34FB-5D26-447A-A5BF-52034D075A64}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
 		{7E7F34FB-5D26-447A-A5BF-52034D075A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E7F34FB-5D26-447A-A5BF-52034D075A64}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7A9AF8CF-24C3-40E1-B131-C1F412607666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A9AF8CF-24C3-40E1-B131-C1F412607666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A9AF8CF-24C3-40E1-B131-C1F412607666}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{7A9AF8CF-24C3-40E1-B131-C1F412607666}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
 		{7A9AF8CF-24C3-40E1-B131-C1F412607666}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A9AF8CF-24C3-40E1-B131-C1F412607666}.Release|Any CPU.Build.0 = Release|Any CPU
 		{35044C63-BF5F-4781-9941-6B2EF09AB547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{35044C63-BF5F-4781-9941-6B2EF09AB547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35044C63-BF5F-4781-9941-6B2EF09AB547}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{35044C63-BF5F-4781-9941-6B2EF09AB547}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
 		{35044C63-BF5F-4781-9941-6B2EF09AB547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35044C63-BF5F-4781-9941-6B2EF09AB547}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
