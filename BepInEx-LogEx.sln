@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BepinSerilogger", "BepinSerilogger\BepinSerilogger.csproj", "{7E7F34FB-5D26-447A-A5BF-52034D075A64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GotSeq", "BepinSerilogger\GotSeq.csproj", "{7E7F34FB-5D26-447A-A5BF-52034D075A64}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketListenServer", "WebSocketListenServer\WebSocketListenServer.csproj", "{7A9AF8CF-24C3-40E1-B131-C1F412607666}"
 EndProject

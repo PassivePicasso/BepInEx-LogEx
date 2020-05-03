@@ -1,0 +1,66 @@
+* {
+    font-family: RiskofRainFont, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body.dark-theme .top-bar {
+    background-color: #7766a7;
+    color: #fffeb2;
+}
+
+body.dark-theme .view {
+    color: #fffeb2;
+}
+
+body.dark-theme .tabbed-layout .title, body.dark-theme .settings-layout .title, body.dark-theme .user-layout .title {
+    background-color: #47204a;
+}
+
+body.dark-theme .events .event-filter-container {
+    background-color: #47204a;
+}
+
+body.dark-theme .signal-bar {
+    background-color: #47204a;
+}
+
+body.dark-theme .stream-view .content {
+    background-color: #59628e;
+}
+
+body.dark-theme .seq-level-error .rendered-message .token.token-string {
+    color: red;
+}
+
+body.dark-theme .seq-level-warning .rendered-message .token.token-string {
+    color: #fffeb2;
+}
+
+.top-bar .location-bar {
+    left: 10px;
+}
+
+body.dark-theme .rendered-message .token.token-string {
+    font-size: 12px;
+    color: white;
+}
+
+.CodeMirror-wrap pre {
+    font-size: 14px;
+    color: #fffeb2;
+}
+
+.event .timestamp {
+    width: 230px;
+    font-size: 11px;
+    color: #fffeb2;
+}
+
+body.dark-theme .top-bar .location-bar .instance-name {
+    font-weight: bold;
+    font-size: 24px;
+    color: #fffeb2;
+}
+
+.logo {
+    display: none;
+}

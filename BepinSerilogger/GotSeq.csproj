@@ -8,8 +8,8 @@
     <ProjectGuid>{7E7F34FB-5D26-447A-A5BF-52034D075A64}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LogRedirect</RootNamespace>
-    <AssemblyName>LogRedirect</AssemblyName>
+    <RootNamespace>GotSeq</RootNamespace>
+    <AssemblyName>GotSeq</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -90,5 +90,24 @@
     <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.png" />
+    <Content Include="RoR2SeqTheme.css" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="PostBuildEvent">
+    <ItemGroup>
+      <Patcher Include="$(OutputPath)$(AssemblyName).dll" />
+      <Patcher Include="$(OutputPath)Serilog.dll" />
+      <Patcher Include="$(OutputPath)Serilog.Formatting.Compact.dll" />
+      <Patcher Include="$(OutputPath)Serilog.Sinks.File.dll" />
+      <Patcher Include="$(OutputPath)Serilog.Sinks.PeriodicBatching.dll" />
+      <Patcher Include="$(OutputPath)Serilog.Sinks.Seq.dll" />
+      <Icon Include="icon.png" />
+      <Manifest Include="manifest.json" />
+      <Readme Include="README.md" />
+    </ItemGroup>
+    <Message Text="Loaded Files for Deployment" />
+    <Message Text="@(Patcher->'%0A%(Filename)%(Extension)');" />
+  </Target>
 </Project>
