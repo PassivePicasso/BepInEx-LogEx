@@ -93,6 +93,9 @@
   <ItemGroup>
     <Content Include="icon.png" />
     <Content Include="RoR2SeqTheme.css" />
+    <Content Include="screenshot01.png" />
+    <Content Include="screenshot02.png" />
+    <Content Include="screenshot03.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="PostBuildEvent">
