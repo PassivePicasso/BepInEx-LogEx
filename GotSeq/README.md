@@ -6,7 +6,7 @@ This is primarily intended to provide the ability to create alternative log disp
 
 Go to Http://GetSeq.net/ to acquire a Single-User license copy of Seq.NET to setup as a local server, installation is an easy next next next wizard, simply use all defaults.
 
-Go to the GitHub for a special Risk of Rain Seq.NET Theme! appliable in the Settings > Instance menu!
+[Click Here to acquire a Risk of Rain Seq.NET Theme](https://github.com/PassivePicasso/BepInEx-LogEx/blob/master/GotSeq/RoR2SeqTheme.css)
 
 If you know how to work your way around RoR2 Mod development, find the RiskofRainFont file in and install it for special font support.
 
