@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GotSeq", "GotSeq\GotSeq.csproj", "{7E7F34FB-5D26-447A-A5BF-52034D075A64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketListenServer", "WebSocketListenServer\WebSocketListenServer.csproj", "{7A9AF8CF-24C3-40E1-B131-C1F412607666}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSlog", "WebSocketListenServer\WebSlog.csproj", "{7A9AF8CF-24C3-40E1-B131-C1F412607666}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketLogClient", "WebSocketLogClient\WebSocketLogClient.csproj", "{35044C63-BF5F-4781-9941-6B2EF09AB547}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSlogClient", "WebSocketLogClient\WebSlogClient.csproj", "{35044C63-BF5F-4781-9941-6B2EF09AB547}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceAssemblies", "ReferenceAssemblies", "{D5203CDB-61A3-4F9D-9F44-79C5767097A4}"
 	ProjectSection(SolutionItems) = preProject
