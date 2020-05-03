@@ -3,11 +3,11 @@ using Serilog;
 
 namespace WebSocketListenServers
 {
-    public class SerilogListener : ILogListener
+    public class GotSeqLogListener : ILogListener
     {
         private Serilog.Core.Logger logger;
 
-        public SerilogListener()
+        public GotSeqLogListener()
         {
             logger = new LoggerConfiguration()
                                     .WriteTo.Seq("http://localhost:5341")

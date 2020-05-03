@@ -81,9 +81,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Delegate.cs" />
-    <Compile Include="BepinSerilogger.cs" />
+    <Compile Include="GotSeqInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SerilogListener.cs" />
+    <Compile Include="GotSeqLogListener.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="manifest.json" />

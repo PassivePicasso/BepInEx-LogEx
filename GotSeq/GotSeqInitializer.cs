@@ -1,13 +1,12 @@
 ﻿using BepInEx.Logging;
-using WebSocketListenServers;
 using Mono.Cecil;
-using Serilog;
 using System.Collections.Generic;
 using System.Linq;
+using WebSocketListenServers;
 
 namespace PassivePicsso
 {
-    public class BepinSerilogger 
+    public class GotSeqInitializer
     {
         public static IEnumerable<string> TargetDLLs => Enumerable.Empty<string>();
 
@@ -20,7 +19,7 @@ namespace PassivePicsso
         public static void Initialize()
         {
             var logger = Logger.CreateLogSource("BepinSerilogger");
-            Logger.Listeners.Add(new SerilogListener());
+            Logger.Listeners.Add(new GotSeqLogListener());
             logger.LogInfo("Registered BepinSerilogger");
         }
     }
