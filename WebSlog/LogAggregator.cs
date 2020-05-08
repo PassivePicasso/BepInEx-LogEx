@@ -5,8 +5,8 @@ namespace PassivePicasso.WebSlog
 {
     public class LogAggregator : ILogListener
     {
-        List<string> LogEntries = new List<string>(5000);
-        internal IEnumerable<string> Logs => LogEntries.AsReadOnly();
+        List<LogEventArgs> LogEntries = new List<LogEventArgs>(5000);
+        internal IEnumerable<LogEventArgs> Logs => LogEntries.AsReadOnly();
 
         public void Dispose()
         {
@@ -14,7 +14,7 @@ namespace PassivePicasso.WebSlog
 
         public void LogEvent(object sender, LogEventArgs eventArgs)
         {
-            LogEntries.Add(WebSocketLogServer.Format(sender, eventArgs));
+            LogEntries.Add(eventArgs);
         }
     }
 }
