@@ -1,4 +1,7 @@
-﻿using System;
+﻿using PassivePicasso.WebSlog.Shared;
+using ProtoBuf;
+using System;
+using System.IO;
 using System.Threading;
 using WebSocketSharp;
 
@@ -25,14 +28,18 @@ namespace PassivePicasso.WebSlogClient
 
         private static void Ws_OnMessage(object sender, MessageEventArgs e)
         {
-            Console.WriteLine(e.Data);
+            using (var stream = new MemoryStream(e.RawData))
+            {
+                var entry = Serializer.Deserialize<LogEntry>(stream);
+                Console.WriteLine($"[{entry.Level}:{entry.Source}] {entry.Data}");
+            }
         }
         private static void Ws_OnOpen(object sender, EventArgs e)
         {
             Console.WriteLine("Connection established");
         }
 
-        private static void Ws_OnError(object sender, ErrorEventArgs e)
+        private static void Ws_OnError(object sender, WebSocketSharp.ErrorEventArgs e)
         {
             Console.WriteLine($"Connection error {e.Message}");
         }

@@ -1,7 +1,8 @@
 {
   "name": "WebSlog",
-  "version_number": "2.2.2",
+  "version_number": "3.0.0",
   "website_url": "https://github.com/PassivePicasso/BepInEx-LogEx",
   "description": "A simple WebSocket Server which forwards BepInEx log output to connected websocket clients",
   "dependencies": [ "bbepis-BepInExPack-3.0.0" ]
 }
+6
