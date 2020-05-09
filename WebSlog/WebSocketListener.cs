@@ -47,7 +47,7 @@ namespace PassivePicasso.WebSlog
 
         string Jsonify(LogEventArgs entry)
         {
-            return $"{{ \"source\": \"{entry.Source.SourceName}\", \"level\": \"{entry.Level}\", \"levelcode\": \"{(byte)entry.Level}\", \"data\": \"{entry.Data}\" }}";
+            return JsonUtility.ToJson(entry);
         }
     }
 }
