@@ -1,4 +1,5 @@
-﻿using BepInEx.Logging;
+﻿using BepInEx;
+using BepInEx.Logging;
 using Serilog;
 
 namespace PassivePicasso.GotSeq
@@ -9,10 +10,15 @@ namespace PassivePicasso.GotSeq
 
         public GotSeqLogListener()
         {
-            logger = new LoggerConfiguration()
-                                    .WriteTo.Seq("http://localhost:5341")
-                                    .CreateLogger();
+            var config = new LoggerConfiguration();
+            if (string.IsNullOrEmpty(GotSeqInitializer.SeqApiKey.Value))
+                config = config.WriteTo.Seq(GotSeqInitializer.SeqAddress.Value);
+            else
+                config = config.WriteTo.Seq(GotSeqInitializer.SeqAddress.Value, apiKey: GotSeqInitializer.SeqApiKey.Value);
+
+            logger = config.CreateLogger();
         }
+
         public void Dispose()
         {
             Log.CloseAndFlush();

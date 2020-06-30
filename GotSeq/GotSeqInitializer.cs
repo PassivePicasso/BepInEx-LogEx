@@ -1,8 +1,9 @@
-﻿using BepInEx.Logging;
+﻿using BepInEx.Configuration;
+using BepInEx.Logging;
 using Mono.Cecil;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using PassivePicasso;
 
 namespace PassivePicasso.GotSeq
 {
@@ -10,6 +11,9 @@ namespace PassivePicasso.GotSeq
     {
         public static IEnumerable<string> TargetDLLs => Enumerable.Empty<string>();
 
+        public static ConfigEntry<string> SeqAddress { get; set; }
+        public static ConfigEntry<string> SeqApiKey { get; set; }
+        
         public static void Patch(AssemblyDefinition assembly)
         {
 
@@ -18,9 +22,15 @@ namespace PassivePicasso.GotSeq
         // Called before patching occurs
         public static void Initialize()
         {
-            var logger = Logger.CreateLogSource("BepinSerilogger");
+            var rootPath = BepInEx.Paths.ConfigPath;
+            var configPath = Path.Combine(rootPath, "GotSeq.cfg");
+            var config = new ConfigFile(configPath, true);
+            SeqAddress = config.Bind<string>("Seq.NET", nameof(SeqAddress), "http://localhost:5341");
+            SeqApiKey = config.Bind<string>("Seq.NET", nameof(SeqApiKey), "");
+
+            var logger = Logger.CreateLogSource("GotSeq");
             Logger.Listeners.Add(new GotSeqLogListener());
-            logger.LogInfo("Registered BepinSerilogger");
+            logger.LogInfo("Registered GotSeq? log forwarder");
         }
     }
 }
